@@ -112,123 +112,339 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<!-- last Fivve Complain -->
 							<div class="col-md-12 chit-chat-layer1-left">
 								<div class="work-progres">
-										<nav aria-label="breadcrumb br" style=" margin-left:-5px;">
-												<ol class="breadcrumb" style="background-color: #07f389">
-												  <li class="breadcrumb-item"><a href="index.html"style="color:chocolate; font-weight:bold; font-size:27px;">Home</a></li>
-												  <li class="breadcrumb-item"style="color:chocolate; font-weight:bold;font-size:27px;">Owner Information</li>
-												  <li class="breadcrumb-item active" style="color:chocolate;font-size:27px; "aria-current="page">Owner List</li>
+									<nav aria-label="breadcrumb br" style=" margin-left:-5px;">
+											<ol class="breadcrumb" style="background-color: #07f389">
+											  <li class="breadcrumb-item"><a href="index.html"style="color:chocolate; font-weight:bold; font-size:27px;">Home</a></li>
+											  <li class="breadcrumb-item"style="color:chocolate; font-weight:bold;font-size:27px;">Owner Information</li>
+											  <li class="breadcrumb-item active" style="color:chocolate;font-size:27px; "aria-current="page">Owner List</li>
+									
+											</ol>
+											<a class="btn btn-primary"  style="float: right;    font-size: 2rem;"
+											 href="addOwner.html" data-toggle="tooltip" data-placement="left" title="Add owner">
+													<i class="fa fa-plus"></i></a>	
+													<a class="btn btn-primary"  style="float: right;    font-size: 2rem;"
+											 href="index.html" data-toggle="tooltip" data-placement="left" title="Home">
+													<i class="fa fa-dashboard"></i></a>	
+										  </nav>
+								<div class="chit-chat-heading">
+										<i class="fa fa-align-justify"></i><span style="display:inline-block;width: 10px;"></span>Owner List
+								</div>
+			
+								<div class="table-responsive" style="border: 3px solid whitesmoke; border-radius: 29px">
+									<table class="table table-dark table-hover">
+										<thead>
+			
+											<tr>
+												<th style=" font-size: 20px;">Image</th>
+												<th style=" font-size: 20px;">Owner Name</th>
+												<th style=" font-size: 20px;">Email</th>
+												<th style=" font-size: 20px;">Contact No</th>
+												<th style=" font-size: 20px;">Present Addres</th>
+												<th style=" font-size: 20px;">Owner Id</th>
+												<th colspan="2" align="center"style=" font-size: 20px;">Action</th>
+											</tr>
+			
+			
+										</thead>
 										
-												</ol>
-												<a class="btn btn-primary"  style="float: right;    font-size: 2rem;"
-												 href="addFloor.html" data-toggle="tooltip" data-placement="left" title="Add owner">
-														<i class="fa fa-plus"></i></a>	
-														<a class="btn btn-primary"  style="float: right;    font-size: 2rem;"
-												 href="index.html" data-toggle="tooltip" data-placement="left" title="Home">
-														<i class="fa fa-dashboard"></i></a>	
-											  </nav>
-									<div class="chit-chat-heading">
-											<i class="fa fa-align-justify"></i><span style="display:inline-block;width: 10px;"></span>Floor List
-									</div>
-				
-									<div class="table-responsive" style="border: 3px solid whitesmoke; border-radius: 29px">
-										<table class="table table-dark table-hover">
-											<thead>
-				
+										<tbody>
 												<tr>
-													<th style=" font-size: 20px;">Image</th>
-													<th style=" font-size: 20px;">Owner Name</th>
-													<th style=" font-size: 20px;">Email</th>
-													<th style=" font-size: 20px;">Contact No</th>
-													<th style=" font-size: 20px;">Present Addres</th>
-													<th style=" font-size: 20px;">Owner Id</th>
-													<th colspan="2" align="center"style=" font-size: 20px;">Action</th>
-												</tr>
-				
-				
-											</thead>
-											
-											<tbody>
-													<tr>
-															<td><img class="photo_img_round" style="width:50px;height:50px;" 
-																src="http://dhakadailybazar.com/apartment-management-system/img/upload/CC41C5ED-6645-79F7-3E30-5201BCAF153B.jpg"></td>
-															
-																<td>Sujanthan</td>
-																<td>Sujanspp@gmail.com</td>
-																<td>0776798456</td>
-																<td>Mannar</td>
-																<td>2A</td>
+														<td><img class="img-circle" style="width:50px;height:50px;" 
+															src="/images/owner1.jpg"></td>
 														
-															<td>
-																	<a href="editFloor.html"><button class="btn btn-warning ams_btn_special"  title="Edit"><i class="fa fa-pencil"></i></button></a>
+															<td>Abi</td>
+															<td>Abi007@gmail.com</td>
+															<td>0776798456</td>
+															<td>Mannar</td>
+															<td>2A</td>
+													
+														<td><button title="View " class="btn btn-success ams_btn_special" data-toggle="modal" data-target="#v1"><i class="fa fa-eye"></i></button>
+															<div id="v1" class="modal">
+		
+																<!-- Modal content -->
+																<div class="modalt-content">
+																	<div class="modalt-header">
+																		<span class="closet" data-dismiss="modal">&times;</span>
+		
+																		<h2>Owner Details:</h2>
+																	</div>
+																	<div class="modal-body model_view" align="center">&nbsp;
+																		<div><img class="img-circle" style="width:200px;height:200px;" 
+																			src="/images/owner1.jpg"> </div>
+																		<h3 style="text-decoration:underline;font-weight:bold ">Abi</h3>
+																	  </div>
+																	<div class="modalt-body">
+		
+																		<h3 style="text-decoration:underline;font-weight:bold ">Details Infromation</h3>
+																		<div class="row">
+																			<div class="col-xs-6"> <b>Owner Name :</b>Abi<br>
+																				<b>Email :</b> Abi007@gmail.com<br>
+																				<b>Mobile :</b> 0776798456<br>
+																				<b>Address :</b> Mannar
+																				thanks<br></div>
+																			<div class="col-xs-6"><b>Floor No :</b> Second Floor<br>
+																				<b>Owner Unit :</b> 2A<br>
+																			
+																			</div>
+																		</div>
+																	</div>
+																	<div class="modalt-footer">
+																		<h3>Thank you</h3>
+		
+																	</div>
+		
+																</div>
+		
+		
+															</div>
+		
+																<a href="EditOwner.html"><button class="btn btn-warning ams_btn_special"  title="Edit"><i class="fa fa-pencil"></i></button></a>
+																	<button class="btn btn-danger ams_btn_special" onclick="" title="Delete"><i class="fa fa-trash"></i></button>
+																</td>
+														</tr>
+			
+														<tr>
+														<td><img class="img-circle" style="width:50px;height:50px;" 
+															src="/images/p8.png"></td>
+														
+															<td>rohit</td>
+															<td>rohapp@gmail.com</td>
+															<td>0776798456</td>
+															<td>Moratuwa</td>
+															<td>2B</td>
+													
+															<td><button title="View " class="btn btn-success ams_btn_special" data-toggle="modal" data-target="#v1"><i class="fa fa-eye"></i></button>
+																<div id="v1" class="modal">
+			
+																	<!-- Modal content -->
+																	<div class="modalt-content">
+																		<div class="modalt-header">
+																			<span class="closet" data-dismiss="modal">&times;</span>
+			
+																			<h2>Owner Details:</h2>
+																		</div>
+																		<div class="modal-body model_view" align="center">&nbsp;
+																			<div><img class="img-circle" style="width:200px;height:200px;" 
+																				src="/images/p8.png"> </div>
+																			<h3 style="text-decoration:underline;font-weight:bold ">Rohit</h3>
+																		  </div>
+																		<div class="modalt-body">
+			
+																			<h3 style="text-decoration:underline;font-weight:bold ">Details Infromation</h3>
+																			<div class="row">
+																				<div class="col-xs-6"> <b>Owner Name :</b>Rohit<br>
+																					<b>Email :</b> rr006@gmail.com<br>
+																					<b>Mobile :</b> 0776798456<br>
+																					<b>Address :</b> Moratuwa
+																					thanks<br></div>
+																				<div class="col-xs-6"><b>Floor No :</b> Second Floor<br>
+																					<b>Owner Unit :</b> 2B<br>
+																				
+																				</div>
+																			</div>
+																		</div>
+																		<div class="modalt-footer">
+																			<h3>Thank you</h3>
+			
+																		</div>
+			
+																	</div>
+			
+			
+																</div>
+			
+																	<a href="EditOwner.html"><button class="btn btn-warning ams_btn_special"  title="Edit"><i class="fa fa-pencil"></i></button></a>
+																		<button class="btn btn-danger ams_btn_special" onclick="" title="Delete"><i class="fa fa-trash"></i></button>
+																	</td>
+														</tr>
+														<tr>
+															<td><img class="img-circle" style="width:50px;height:50px;" 
+																src="/images/owner3.jpg"></td>
+															
+															<td>rahul</td>
+															<td>rahul123@gmail.com</td>
+															<td>0776798456</td>
+															<td>dehiwala</td>
+															<td>2C</td>
+													
+														<td><button title="View " class="btn btn-success ams_btn_special" data-toggle="modal" data-target="#v1"><i class="fa fa-eye"></i></button>
+															<div id="v1" class="modal">
+		
+																<!-- Modal content -->
+																<div class="modalt-content">
+																	<div class="modalt-header">
+																		<span class="closet" data-dismiss="modal">&times;</span>
+		
+																		<h2>Owner Details:</h2>
+																	</div>
+																	<div class="modal-body model_view" align="center">&nbsp;
+																		<div> <img class="photo_img_round" style="width:200px;height:200px;" src="http://dhakadailybazar.com/apartment-management-system/img/upload/CC41C5ED-6645-79F7-3E30-5201BCAF153B.jpg"> </div>
+																		<h3 style="text-decoration:underline;font-weight:bold ">Janu</h3>
+																	  </div>
+																	<div class="modalt-body">
+		
+																		<h3 style="text-decoration:underline;font-weight:bold ">Details Infromation</h3>
+																		<div class="row">
+																			<div class="col-xs-6"> <b>Owner Name :</b>janu<br>
+																				<b>Email :</b> Janu@gmail.com<br>
+																				<b>Mobile :</b> +89898989<br>
+																				<b>Address :</b> Test Address
+																				thanks<br></div>
+																			<div class="col-xs-6"><b>Floor No :</b> Fourth Floor<br>
+																				<b>Owner Unit :</b> 4A<br>
+																			
+																			</div>
+																		</div>
+																	</div>
+																	<div class="modalt-footer">
+																		<h3>Thank you</h3>
+		
+																	</div>
+		
+																</div>
+		
+		
+															</div>
+		
+																<a href="EditOwner.html"><button class="btn btn-warning ams_btn_special"  title="Edit"><i class="fa fa-pencil"></i></button></a>
+																	<button class="btn btn-danger ams_btn_special" onclick="" title="Delete"><i class="fa fa-trash"></i></button>
+																</td>
+														</tr>
+														<tr>
+															<td><img class="img-circle" style="width:50px;height:50px;" 
+																src="/images/owner2.jpg"></td>
+															
+																<td>meena</td>
+																<td>meenuapp@gmail.com</td>
+																<td>0779978456</td>
+																<td>wellawatta</td>
+																<td>2D</td>
+														
+															<td><button title="View " class="btn btn-success ams_btn_special" data-toggle="modal" data-target="#v1"><i class="fa fa-eye"></i></button>
+																<div id="v1" class="modal">
+			
+																	<!-- Modal content -->
+																	<div class="modalt-content">
+																		<div class="modalt-header">
+																			<span class="closet" data-dismiss="modal">&times;</span>
+			
+																			<h2>Owner Details:</h2>
+																		</div>
+																		<div class="modal-body model_view" align="center">&nbsp;
+																			<div> <img class="photo_img_round" style="width:200px;height:200px;" src="http://dhakadailybazar.com/apartment-management-system/img/upload/CC41C5ED-6645-79F7-3E30-5201BCAF153B.jpg"> </div>
+																			<h3 style="text-decoration:underline;font-weight:bold ">Janu</h3>
+																		  </div>
+																		<div class="modalt-body">
+			
+																			<h3 style="text-decoration:underline;font-weight:bold ">Details Infromation</h3>
+																			<div class="row">
+																				<div class="col-xs-6"> <b>Owner Name :</b>janu<br>
+																					<b>Email :</b> Janu@gmail.com<br>
+																					<b>Mobile :</b> +89898989<br>
+																					<b>Address :</b> Test Address
+																					thanks<br></div>
+																				<div class="col-xs-6"><b>Floor No :</b> Fourth Floor<br>
+																					<b>Owner Unit :</b> 4A<br>
+																				
+																				</div>
+																			</div>
+																		</div>
+																		<div class="modalt-footer">
+																			<h3>Thank you</h3>
+			
+																		</div>
+			
+																	</div>
+			
+			
+																</div>
+			
+																	<a href="EditOwner.html"><button class="btn btn-warning ams_btn_special"  title="Edit"><i class="fa fa-pencil"></i></button></a>
 																		<button class="btn btn-danger ams_btn_special" onclick="" title="Delete"><i class="fa fa-trash"></i></button>
 																	</td>
 															</tr>
-				
 															<tr>
-																	<td>Sec</td>
-																	<td>2A,2B,2C,2D</td>
+																<td><img class="img-circle" style="width:50px;height:50px;" 
+																	src="/images/mypro.jpg"></td>
 																
-																	<td>
-																			<a href="editFloor.html"><button class="btn btn-warning ams_btn_special"  title="Edit"><i class="fa fa-pencil"></i></button></a>
-																				<button class="btn btn-danger ams_btn_special" onclick="" title="Delete"><i class="fa fa-trash"></i></button>
-																			</td>
-																	</tr>
-																	<tr>
-																			<td>Second Floor</td>
-																			<td>2A,2B,2C,2D</td>
-																		
-																			<td>
-																					<a href="editFloor.html"><button class="btn btn-warning ams_btn_special"  title="Edit"><i class="fa fa-pencil"></i></button></a>
-																						<button class="btn btn-danger ams_btn_special" onclick="" title="Delete"><i class="fa fa-trash"></i></button>
-																					</td>
-																			</tr>
-																			<tr>
-																					<td>Second Floor</td>
-																					<td>2A,2B,2C,2D</td>
-																				
-																					<td>
-																							<a href="editFloor.html"><button class="btn btn-warning ams_btn_special"  title="Edit"><i class="fa fa-pencil"></i></button></a>
-																								<button class="btn btn-danger ams_btn_special" onclick="" title="Delete"><i class="fa fa-trash"></i></button>
-																							</td>
-																					</tr>
-																					<tr>
-																							<td>Second Floor</td>
-																							<td>2A,2B,2C,2D</td>
-																						
-																							<td>
-																									<a href="editFloor.html"><button class="btn btn-warning ams_btn_special"  title="Edit"><i class="fa fa-pencil"></i></button></a>
-																										<button class="btn btn-danger ams_btn_special" onclick="" title="Delete"><i class="fa fa-trash"></i></button>
-																									</td>
-																							</tr>
-				
-				
-				
+																	<td>Sujanthan</td>
+																	<td>Sujanspp@gmail.com</td>
+																	<td>0770882222</td>
+																	<td>jaffna</td>
+																	<td>2D</td>
 															
+																<td><button title="View " class="btn btn-success ams_btn_special" data-toggle="modal" data-target="#v1"><i class="fa fa-eye"></i></button>
+																	<div id="v1" class="modal">
+				
+																		<!-- Modal content -->
+																		<div class="modalt-content">
+																			<div class="modalt-header">
+																				<span class="closet" data-dismiss="modal">&times;</span>
+				
+																				<h2>Owner Details:</h2>
+																			</div>
+																			<div class="modal-body model_view" align="center">&nbsp;
+																				<div> <img class="photo_img_round" style="width:200px;height:200px;" src="http://dhakadailybazar.com/apartment-management-system/img/upload/CC41C5ED-6645-79F7-3E30-5201BCAF153B.jpg"> </div>
+																				<h3 style="text-decoration:underline;font-weight:bold ">Janu</h3>
+																			  </div>
+																			<div class="modalt-body">
+				
+																				<h3 style="text-decoration:underline;font-weight:bold ">Details Infromation</h3>
+																				<div class="row">
+																					<div class="col-xs-6"> <b>Owner Name :</b>janu<br>
+																						<b>Email :</b> Janu@gmail.com<br>
+																						<b>Mobile :</b> +89898989<br>
+																						<b>Address :</b> Test Address
+																						thanks<br></div>
+																					<div class="col-xs-6"><b>Floor No :</b> Fourth Floor<br>
+																						<b>Owner Unit :</b> 4A<br>
+																					
+																					</div>
+																				</div>
+																			</div>
+																			<div class="modalt-footer">
+																				<h3>Thank you</h3>
+				
+																			</div>
+				
+																		</div>
 				
 				
+																	</div>
 				
-				
-				
-				
-				
-				
-				
-				
-				
-													
+																		<a href="EditOwner.html"><button class="btn btn-warning ams_btn_special"  title="Edit"><i class="fa fa-pencil"></i></button></a>
+																			<button class="btn btn-danger ams_btn_special" onclick="" title="Delete"><i class="fa fa-trash"></i></button>
+																		</td>
+																</tr>
+			
+			
+			
+														
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 												
-				
-											</tbody>
-										</table>
-									
-									</div>
-									<ul class="pagination">
-											<li class="active" disabled><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
-											<li ><a href="FloorList2.html"><i class="fa fa-angle-double-right"></i></a></li>
-									
-										
-										  </ul>
+											
+			
+										</tbody>
+									</table>
+								
 								</div>
+								<ul class="pagination">
+										<li class="active" disabled><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
+										<li ><a href="ownerList2.html"><i class="fa fa-angle-double-right"></i></a></li>
+								
+									
+									  </ul>
+							</div>
 							</div>
 							<!-- Last five vistiors -->
 						
