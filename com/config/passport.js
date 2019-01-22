@@ -13,7 +13,7 @@ module.exports = function(passport) {
  });
 
  passport.deserializeUser(function(id, done){
-  connection.query("SELECT * FROM users WHERE id = ? ", [id],
+  connection.query("SELECT * FROM complaint WHERE id = ? ", [id],
    function(err, rows){
     done(err, rows[0]);
    });
@@ -27,19 +27,19 @@ module.exports = function(passport) {
    passReqToCallback: true
   },
   function(req, username, password, done){
-   connection.query("SELECT * FROM users WHERE username = ? ", 
+   connection.query("SELECT * FROM complaint WHERE username = ? ", 
    [username], function(err, rows){
     if(err)
      return done(err);
     if(rows.length){
-     return done(null, false, req.flash('signupMessage', 'That is already taken'));
+     return done(null, false, req.flash('save information', 'That is already taken'));
     }else{
      var newUserMysql = {
       username: username,
       password: bcrypt.hashSync(password, null, null)
      };
 
-     var insertQuery = "INSERT INTO users (username, password) values (?, ?)";
+     var insertQuery = "INSERT INTO Compain (Subject,Content,Date,Complaint_By) values (?, ?, ?, ?)";
 
      connection.query(insertQuery, [newUserMysql.username, newUserMysql.password],
       function(err, rows){
@@ -59,10 +59,10 @@ module.exports = function(passport) {
     if(err)
      return done(err);
     if(!rows.length){
-     return done(null, false, req.flash('loginMessage', 'No User Found'));
+     return done(null, false, req.flash('save Information', 'No User Found'));
     }
     if(!bcrypt.compareSync(password, rows[0].password))
-     return done(null, false, req.flash('loginMessage', 'Wrong Password'));
+     return done(null, false, req.flash('Save Information', 'back'));
 
     return done(null, rows[0]);
    });
