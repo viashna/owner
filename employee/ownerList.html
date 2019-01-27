@@ -137,7 +137,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 													<th style=" font-size: 20px;">Owner Name</th>
 													<th style=" font-size: 20px;">Email</th>
 													<th style=" font-size: 20px;">Contact No</th>
-													
 													<th colspan="2" align="center"style=" font-size: 20px;">Action</th>
 												</tr>
 				
@@ -147,117 +146,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<tbody>
 													<tr>
 															<td><img class="img-circle" style="width:50px;height:50px;" 
-																src="/images/owner1.jpg"></td>
+																src="/images/mypro.jpg"></td>
 															
-																<td>Abi</td>
-																<td>Abi007@gmail.com</td>
-																<td>0776798456</td>
-																
-														
-															<td><button title="View " class="btn btn-success ams_btn_special" data-toggle="modal" data-target="#v1"><i class="fa fa-eye"></i></button>
-																<div id="v1" class="modal">
-			
-																	<!-- Modal content -->
-																	<div class="modalt-content">
-																		<div class="modalt-header">
-																			<span class="closet" data-dismiss="modal">&times;</span>
-			
-																			<h2>Owner Details:</h2>
-																		</div>
-																		<div class="modal-body model_view" align="center">&nbsp;
-																			<div><img class="img-circle" style="width:200px;height:200px;" 
-																				src="/images/owner1.jpg"> </div>
-																			<h3 style="text-decoration:underline;font-weight:bold ">Abi</h3>
-																		  </div>
-																		<div class="modalt-body">
-			
-																			<h3 style="text-decoration:underline;font-weight:bold ">Details Infromation</h3>
-																			<div class="row">
-																				<div class="col-xs-6"> <b>First Name :</b>janu<br>
-																					<b>Last Name :</b>janu<br>
-																					<b>Email :</b> Janu@gmail.com<br>
-																					<b>Mobile :</b> +89898989<br>
-																					<b>Address :</b> Test Address
-																					thanks<br>
-																					<b>House Name :</b>02A<br>
-																					<b>Contact Number:</b>0243315276<br></div>
-																				
-																				
-																			</div>
-																		</div>
-																		<div class="modalt-footer">
-																			<h3>Thank you</h3>
-			
-																		</div>
-			
-																	</div>
-			
-			
-																</div>
-			
-																	
-																	</td>
-															</tr>
-				
-															<tr>
-															<td><img class="img-circle" style="width:50px;height:50px;" 
-																src="/images/p8.png"></td>
-															
-																<td>rohit</td>
-																<td>rohapp@gmail.com</td>
-																<td>0776798456</td>
-																
-														
-																<td><button title="View " class="btn btn-success ams_btn_special" data-toggle="modal" data-target="#v1"><i class="fa fa-eye"></i></button>
-																	<div id="v1" class="modal">
-				
-																		<!-- Modal content -->
-																		<div class="modalt-content">
-																			<div class="modalt-header">
-																				<span class="closet" data-dismiss="modal">&times;</span>
-				
-																				<h2>Owner Details:</h2>
-																			</div>
-																			<div class="modal-body model_view" align="center">&nbsp;
-																				<div><img class="img-circle" style="width:200px;height:200px;" 
-																					src="/images/p8.png"> </div>
-																				<h3 style="text-decoration:underline;font-weight:bold ">Rohit</h3>
-																			  </div>
-																			<div class="modalt-body">
-				
-																				<h3 style="text-decoration:underline;font-weight:bold ">Details Infromation</h3>
-																				<div class="row">
-																					<div class="col-xs-6"> <b>Owner Name :</b>Rohit<br>
-																						<b>Email :</b> rr006@gmail.com<br>
-																						<b>Mobile :</b> 0776798456<br>
-																						<b>Address :</b> Moratuwa
-																						thanks<br></div>
-																					<div class="col-xs-6"><b>Floor No :</b> Second Floor<br>
-																						<b>Owner Unit :</b> 2B<br>
-																					
-																					</div>
-																				</div>
-																			</div>
-																			<div class="modalt-footer">
-																				<h3>Thank you</h3>
-				
-																			</div>
-				
-																		</div>
-				
-				
-																	</div>
-				
-																		
-																		</td>
-															</tr>
-													<tr>
-																<td><img class="img-circle" style="width:50px;height:50px;" 
-																	src="/images/owner3.jpg"></td>
-																
-																<td>rahul</td>
-																<td>rahul123@gmail.com</td>
-																<td>0776798456</td>
+																<td><%=owner[size-1].First_Name %></td>
+																<td><%=owner[size-1].Email_Id %></td>
+																<td><%=owner[size-1].Phone %></td>
+												
 																
 														
 															<td><button title="View " class="btn btn-success ams_btn_special" data-toggle="modal" data-target="#v1"><i class="fa fa-eye"></i></button>
@@ -272,22 +166,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 																		</div>
 																		<div class="modal-body model_view" align="center">&nbsp;
 																			<div> <img class="photo_img_round" style="width:200px;height:200px;" src="http://dhakadailybazar.com/apartment-management-system/img/upload/CC41C5ED-6645-79F7-3E30-5201BCAF153B.jpg"> </div>
-																			<h3 style="text-decoration:underline;font-weight:bold ">Janu</h3>
+																			<h3 style="text-decoration:underline;font-weight:bold "><%=owner[size-1].First_Name %></h3>
 																		  </div>
 																		<div class="modalt-body">
 			
 																			<h3 style="text-decoration:underline;font-weight:bold ">Details Infromation</h3>
 																			<div class="row">
-																				<div class="col-xs-6"> <b>First Name :</b>janu<br>
-																					<b>Last Name :</b>janu<br>
-																					<b>Email :</b> Janu@gmail.com<br>
-																					<b>Mobile :</b> +89898989<br>
-																					<b>Address :</b> Test Address
-																					thanks<br>
-																					<b>House Name :</b>02A<br>
-																					<b>Contact Number:</b>0243315276<br></div>
-																				
-																				
+																				<div class="col-xs-6"> <b>First Name :</b><%=owner[size-1].First_Name %><br>
+																					<b>Last Name :</b><%=owner[size-1].Last_Name %><br>
+																					<b>Email :</b> <%=owner[size-1].Email_Id %><br>
+																					<b>Mobile :</b> <%=owner[size-1].Phone %><br>
+																					<b>Address :</b> <%=owner[size-1].Address %></div>
+																				<div class="col-xs-6"><b>House Name :</b> <%=owner[size-1].House_Name %><br>
+																					<b>ContactNumber :</b> <%=owner[size-1].Contact_Number %><br>
+																					<b>Type :</b> <%=owner[size-1].Type %><br>
 																				</div>
 																			</div>
 																		</div>
@@ -301,69 +193,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			
 																</div>
 			
-																	
-																	</td>
-															</tr>
-															<tr>
-																<td><img class="img-circle" style="width:50px;height:50px;" 
-																	src="/images/owner2.jpg"></td>
 																
-																	<td>meena</td>
-																	<td>meenuapp@gmail.com</td>
-																	<td>0779978456</td>
-																	
-																<td><button title="View " class="btn btn-success ams_btn_special" data-toggle="modal" data-target="#v1"><i class="fa fa-eye"></i></button>
-																	<div id="v1" class="modal">
+																</td>
+															</tr>
 				
-																		<!-- Modal content -->
-																		<div class="modalt-content">
-																			<div class="modalt-header">
-																				<span class="closet" data-dismiss="modal">&times;</span>
+															
 				
-																				<h2>Owner Details:</h2>
-																			</div>
-																			<div class="modal-body model_view" align="center">&nbsp;
-																				<div> <img class="photo_img_round" style="width:200px;height:200px;" src="http://dhakadailybazar.com/apartment-management-system/img/upload/CC41C5ED-6645-79F7-3E30-5201BCAF153B.jpg"> </div>
-																				<h3 style="text-decoration:underline;font-weight:bold ">Janu</h3>
-																			  </div>
-																			<div class="modalt-body">
-				
-																				<h3 style="text-decoration:underline;font-weight:bold ">Details Infromation</h3>
-																				<div class="row">
-																					<div class="col-xs-6"> <b>Owner Name :</b>janu<br>
-																						<b>Email :</b> Janu@gmail.com<br>
-																						<b>Mobile :</b> +89898989<br>
-																						<b>Address :</b> Test Address
-																						thanks<br></div>
-																					<div class="col-xs-6"><b>Floor No :</b> Fourth Floor<br>
-																						<b>Owner Unit :</b> 4A<br>
-																					
-																					</div>
-																				</div>
-																			</div>
-																			<div class="modalt-footer">
-																				<h3>Thank you</h3>
-				
-																			</div>
-				
-																		</div>
-				
-				
-																	</div>
-				
-																		
-																		</td>
-																</tr>
-																<tr>
+															<tr>
 																	<td><img class="img-circle" style="width:50px;height:50px;" 
 																		src="/images/mypro.jpg"></td>
 																	
-																		<td>Sujanthan</td>
-																		<td>Sujanspp@gmail.com</td>
-																		<td>0770882222</td>
+																		<td><%=owner[size-2].First_Name %></td>
+																		<td><%=owner[size-2].Email_Id %></td>
+																		<td><%=owner[size-2].Phone %></td>
+														
 																		
-																	<td><button title="View " class="btn btn-success ams_btn_special" data-toggle="modal" data-target="#v1"><i class="fa fa-eye"></i></button>
-																		<div id="v1" class="modal">
+																
+																	<td><button title="View " class="btn btn-success ams_btn_special" data-toggle="modal" data-target="#v2"><i class="fa fa-eye"></i></button>
+																		<div id="v2" class="modal">
 					
 																			<!-- Modal content -->
 																			<div class="modalt-content">
@@ -374,20 +221,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 																				</div>
 																				<div class="modal-body model_view" align="center">&nbsp;
 																					<div> <img class="photo_img_round" style="width:200px;height:200px;" src="http://dhakadailybazar.com/apartment-management-system/img/upload/CC41C5ED-6645-79F7-3E30-5201BCAF153B.jpg"> </div>
-																					<h3 style="text-decoration:underline;font-weight:bold ">Janu</h3>
+																					<h3 style="text-decoration:underline;font-weight:bold "><%=owner[size-2].First_Name %></h3>
 																				  </div>
 																				<div class="modalt-body">
 					
 																					<h3 style="text-decoration:underline;font-weight:bold ">Details Infromation</h3>
 																					<div class="row">
-																						<div class="col-xs-6"> <b>Owner Name :</b>janu<br>
-																							<b>Email :</b> Janu@gmail.com<br>
-																							<b>Mobile :</b> +89898989<br>
-																							<b>Address :</b> Test Address
-																							thanks<br></div>
-																						<div class="col-xs-6"><b>Floor No :</b> Fourth Floor<br>
-																							<b>Owner Unit :</b> 4A<br>
-																						
+																						<div class="col-xs-6"> <b>First Name :</b><%=owner[size-2].First_Name %><br>
+																							<b>Last Name :</b><%=owner[size-2].Last_Name %><br>
+																							<b>Email :</b> <%=owner[size-2].Email_Id %><br>
+																							<b>Mobile :</b> <%=owner[size-2].Phone %><br>
+																							<b>Address :</b> <%=owner[size-2].Address %></div>
+																						<div class="col-xs-6"><b>House Name :</b> <%=owner[size-2].House_Name %><br>
+																							<b>ContactNumber :</b> <%=owner[size-2].Contact_Number %><br>
+																							<b>Type :</b> <%=owner[size-2].Type %><br>
 																						</div>
 																					</div>
 																				</div>
@@ -402,9 +249,135 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 																		</div>
 					
 																			
-																			</td>
+																		</td>
 																	</tr>
+
+																	<tr>
+																			<td><img class="img-circle" style="width:50px;height:50px;" 
+																				src="/images/mypro.jpg"></td>
+																			
+																				<td><%=owner[size-3].First_Name %></td>
+																				<td><%=owner[size-3].Email_Id %></td>
+																				<td><%=owner[size-3].Phone %></td>
+																
+																				
+																		
+																			<td><button title="View " class="btn btn-success ams_btn_special" data-toggle="modal" data-target="#v3"><i class="fa fa-eye"></i></button>
+																				<div id="v3" class="modal">
+							
+																					<!-- Modal content -->
+																					<div class="modalt-content">
+																						<div class="modalt-header">
+																							<span class="closet" data-dismiss="modal">&times;</span>
+							
+																							<h2>Owner Details:</h2>
+																						</div>
+																						<div class="modal-body model_view" align="center">&nbsp;
+																							<div> <img class="photo_img_round" style="width:200px;height:200px;" src="http://dhakadailybazar.com/apartment-management-system/img/upload/CC41C5ED-6645-79F7-3E30-5201BCAF153B.jpg"> </div>
+																							<h3 style="text-decoration:underline;font-weight:bold "><%=owner[size-3].First_Name %></h3>
+																						  </div>
+																						<div class="modalt-body">
+							
+																							<h3 style="text-decoration:underline;font-weight:bold ">Details Infromation</h3>
+																							<div class="row">
+																								<div class="col-xs-6"> <b>First Name :</b><%=owner[size-3].First_Name %><br>
+																									<b>Last Name :</b><%=owner[size-3].Last_Name %><br>
+																									<b>Email :</b> <%=owner[size-3].Email_Id %><br>
+																									<b>Mobile :</b> <%=owner[size-3].Phone %><br>
+																									<b>Address :</b> <%=owner[size-3].Address %></div>
+																								<div class="col-xs-6"><b>House Name :</b> <%=owner[size-3].House_Name %><br>
+																									<b>ContactNumber :</b> <%=owner[size-3].Contact_Number %><br>
+																									<b>Type :</b> <%=owner[size-3].Type %><br>
+																								</div>
+																							</div>
+																						</div>
+																						<div class="modalt-footer">
+																							<h3>Thank you</h3>
+							
+																						</div>
+							
+																					</div>
+							
+							
+																				</div>
+							
+																					
+																				</td>
+																			</tr>
+																			<tr>
+																					<td><img class="img-circle" style="width:50px;height:50px;" 
+																						src="/images/mypro.jpg"></td>
+																					
+																						<td><%=owner[size-4].First_Name %></td>
+																						<td><%=owner[size-4].Email_Id %></td>
+																						<td><%=owner[size-4].Phone %></td>
+																		
+																						
+																				
+																					<td><button title="View " class="btn btn-success ams_btn_special" data-toggle="modal" data-target="#v4"><i class="fa fa-eye"></i></button>
+																						<div id="v4" class="modal">
+									
+																							<!-- Modal content -->
+																							<div class="modalt-content">
+																								<div class="modalt-header">
+																									<span class="closet" data-dismiss="modal">&times;</span>
+									
+																									<h2>Owner Details:</h2>
+																								</div>
+																								<div class="modal-body model_view" align="center">&nbsp;
+																									<div> <img class="photo_img_round" style="width:200px;height:200px;" src="http://dhakadailybazar.com/apartment-management-system/img/upload/CC41C5ED-6645-79F7-3E30-5201BCAF153B.jpg"> </div>
+																									<h3 style="text-decoration:underline;font-weight:bold "><%=owner[size-4].First_Name %></h3>
+																								  </div>
+																								<div class="modalt-body">
+									
+																									<h3 style="text-decoration:underline;font-weight:bold ">Details Infromation</h3>
+																									<div class="row">
+																										<div class="col-xs-6"> <b>First Name :</b><%=owner[size-4].First_Name %><br>
+																											<b>Last Name :</b><%=owner[size-4].Last_Name %><br>
+																											<b>Email :</b> <%=owner[size-4].Email_Id %><br>
+																											<b>Mobile :</b> <%=owner[size-4].Phone %><br>
+																											<b>Address :</b> <%=owner[size-4].Address %></div>
+																										<div class="col-xs-6"><b>House Name :</b> <%=owner[size-4].House_Name %><br>
+																											<b>ContactNumber :</b> <%=owner[size-4].Contact_Number %><br>
+																											<b>Type :</b> <%=owner[size-4].Type %><br>
+																										</div>
+																									</div>
+																								</div>
+																								<div class="modalt-footer">
+																									<h3>Thank you</h3>
+									
+																								</div>
+									
+																							</div>
+									
+									
+																						</div>
+									
+																							
+																						</td>
+																					</tr>
 				
+															
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+													
+												
+				
+											</tbody>
+										</table>
+									
+									</div>
+																	
+															
 				
 				
 															
@@ -489,7 +462,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					
 
 
-					<li id="menu-comunicacao"><a href="memberList.html"><i class=" fa fa-user"></i><span> Managment Committee </span><span class="fa fa-angle-right"
+					<li id="menu-comunicacao"><a href="committelist.html"><i class=" fa fa-user"></i><span> Managment Committee </span><span class="fa fa-angle-right"
 							 style="float: right"></span></a>
 					
 					</li>

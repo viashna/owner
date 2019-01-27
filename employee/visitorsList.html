@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Admin Visitors List</title>
+	<title>Visitors List</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="Shoppy Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -121,14 +121,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<thead>
 				
 												<tr>
-													<th style=" font-size: 20px;">Entry Date</th>
+													
 													<th style=" font-size: 20px;">Visitors Name</th>
 													<th style=" font-size: 20px;">Mobile</th>
-                                                    <th style=" font-size: 20px;">Addres</th>
+                                                    <th style=" font-size: 20px;">Address</th>
                                                     <th style=" font-size: 20px;">Floor No</th>
-                                                    <th style=" font-size: 20px;">House No</th>
-                                                    <th style=" font-size: 20px;">Intime</th>
-                                                    <th style=" font-size: 20px;">Outtime</th>
+													<th style=" font-size: 20px;">House Name</th>
+													<th style=" font-size: 20px;">Entry Date</th>
+													<th style=" font-size: 20px;">Out Date</th>
+                                                    <th style=" font-size: 20px;">InTime</th>
+                                                    <th style=" font-size: 20px;">OutTime</th>
 													<th colspan="2" align="center"style=" font-size: 20px;">Action</th>
 												</tr>
 				
@@ -137,104 +139,102 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											
 											<tbody>
 													<tr>
-															
-															
-																<td>21/12/2018</td>
-																<td>Saranka</td>
-																<td>0776798456</td>
-																<td>Mannar</td>
-                                                                <td>2L</td>
-                                                            
-                                                                <td><label class="label label-warning ams_label">3B</label></td>
-                                                                <td><label class="label label-success ams_label">09:00 PM</label></td>
-                                                                <td><label class="label label-danger ams_label">05:00 AM</label></td>
-																<td><button title="View " class="btn btn-success ams_btn_special" data-toggle="modal" data-target="#v1"><i class="fa fa-eye"></i></button>
-                                                                    <div id="v1" class="modal">
-                
-															</tr>
-				
-															<tr>
-															
-															
-																	<td>21/12/2018</td>
-																	<td>Saranka</td>
-																	<td>0776798456</td>
-																	<td>Mannar</td>
-																	<td>2L</td>
+															<td><%=vis[size-1].Full_Name%></td>
+															<td><%=vis[size-1].Mobile_No%></td>
+															<td><%=vis[size-1].Address%></td>
+															<td><label class="label label-primary ams_label"><%=vis[size-1].Name%></label></td>
+															<td><label class="label label-warning ams_label"><%=vis[size-1].House_Name %></label>	</td>
+															<td><%=vis[size-1].InDate%></td>
+															<td><%=vis[size-1].OutDate%></td>
+															<td><label class="label label-success ams_label"><%=vis[size-1].InTime%></label></td>
+                                                            <td><label class="label label-danger ams_label"><%=vis[size-1].OutTime%></label></td>
 																
-																	<td><label class="label label-warning ams_label">3B</label></td>
-																	<td><label class="label label-success ams_label">09:00 PM</label></td>
-																	<td><label class="label label-danger ams_label">05:00 AM</label></td>
-																	<td><button title="View " class="btn btn-success ams_btn_special" data-toggle="modal" data-target="#v1"><i class="fa fa-eye"></i></button>
-																		<div id="v1" class="modal">
-					
-																</tr>
-																<tr>
 															
-															
-																		<td>21/12/2018</td>
-																		<td>Saranka</td>
-																		<td>0776798456</td>
-																		<td>Mannar</td>
-																		<td>2L</td>
-																	
-																		<td><label class="label label-warning ams_label">3B</label></td>
-																		<td><label class="label label-success ams_label">09:00 PM</label></td>
-																		<td><label class="label label-danger ams_label">05:00 AM</label></td>
-																		<td><button title="View " class="btn btn-success ams_btn_special" data-toggle="modal" data-target="#v1"><i class="fa fa-eye"></i></button>
-																			<div id="v1" class="modal">
-						
-																	</tr>
-															
-																	<tr>
-															
-															
-																			<td>21/12/2018</td>
-																			<td>Saranka</td>
-																			<td>0776798456</td>
-																			<td>Mannar</td>
-																			<td>2L</td>
+																
+                                                            
+                                                               
+                                                               
+                                                               <td> <a href="/EditVisitors"><button class="btn btn-warning ams_btn_special"  title="Edit"><i class="fa fa-pencil"></i></button></a>
+																<a href="/delvisitor/<%=vis[size-1].Visitor_Id%>"><button class="btn btn-danger ams_btn_special" onclick="return confirm('Are you sure you want to delete visitor?')" title="Delete"><i class="fa fa-trash"></i></button></a>
+															</tr>
+
+															<tr>
+																	<td><%=vis[size-2].Full_Name%></td>
+																	<td><%=vis[size-2].Mobile_No%></td>
+																	<td><%=vis[size-2].Address%></td>
+																	<td><label class="label label-primary ams_label"><%=vis[size-2].Name%></label></td>
+																	<td><label class="label label-warning ams_label"><%=vis[size-2].House_Name %></label>	</td>
+																	<td><%=vis[size-2].InDate%></td>
+																	<td><%=vis[size-2].OutDate%></td>
+																	<td><label class="label label-success ams_label"><%=vis[size-2].InTime%></label></td>
+																	<td><label class="label label-danger ams_label"><%=vis[size-2].OutTime%></label></td>
 																		
-																			<td><label class="label label-warning ams_label">3B</label></td>
-																			<td><label class="label label-success ams_label">09:00 PM</label></td>
-																			<td><label class="label label-danger ams_label">05:00 AM</label></td>
-																			<td><button title="View " class="btn btn-success ams_btn_special" data-toggle="modal" data-target="#v1"><i class="fa fa-eye"></i></button>
-																				<div id="v1" class="modal">
-							
+																	
+																		
+																	
+																	   
+																	   
+																	   <td> <a href="/EditVisitors2"><button class="btn btn-warning ams_btn_special"  title="Edit"><i class="fa fa-pencil"></i></button></a>
+																		<a href="/delvisitor/<%=vis[size-2].Visitor_Id%>"><button class="btn btn-danger ams_btn_special" onclick="return confirm('Are you sure you want to delete visitor?')" title="Delete"><i class="fa fa-trash"></i></button></a>
+																	</tr>
+				
+																	<tr>
+																		<td><%=vis[size-3].Full_Name%></td>
+																		<td><%=vis[size-3].Mobile_No%></td>
+																		<td><%=vis[size-3].Address%></td>
+																		<td><label class="label label-primary ams_label"><%=vis[size-3].Name%></label></td>
+																		<td><label class="label label-warning ams_label"><%=vis[size-3].House_Name %></label>	</td>
+																		<td><%=vis[size-3].InDate%></td>
+																		<td><%=vis[size-3].OutDate%></td>
+																		<td><label class="label label-success ams_label"><%=vis[size-3].InTime%></label></td>
+																		<td><label class="label label-danger ams_label"><%=vis[size-3].OutTime%></label></td>
+																			
+																		
+																			
+																		
+																		   
+																		   
+																		   <td> <a href="/EditVisitors3"><button class="btn btn-warning ams_btn_special"  title="Edit"><i class="fa fa-pencil"></i></button></a>
+																			<a href="/delvisitor/<%=vis[size-3].Visitor_Id%>"><button class="btn btn-danger ams_btn_special" onclick="return confirm('Are you sure you want to delete visitor?')" title="Delete"><i class="fa fa-trash"></i></button></a>
 																		</tr>
 																		<tr>
-															
-															
-																				<td>21/12/2018</td>
-																				<td>Saranka</td>
-																				<td>0776798456</td>
-																				<td>Mannar</td>
-																				<td>2L</td>
+																			<td><%=vis[size-4].Full_Name%></td>
+																			<td><%=vis[size-4].Mobile_No%></td>
+																			<td><%=vis[size-4].Address%></td>
+																			<td><label class="label label-primary ams_label"><%=vis[size-4].Name%></label></td>
+																			<td><label class="label label-warning ams_label"><%=vis[size-4].House_Name %></label>	</td>
+																			<td><%=vis[size-4].InDate%></td>
+																			<td><%=vis[size-4].OutDate%></td>
+																			<td><label class="label label-success ams_label"><%=vis[size-4].InTime%></label></td>
+																			<td><label class="label label-danger ams_label"><%=vis[size-4].OutTime%></label></td>
+																				
 																			
-																				<td><label class="label label-warning ams_label">3B</label></td>
-																				<td><label class="label label-success ams_label">09:00 PM</label></td>
-																				<td><label class="label label-danger ams_label">05:00 AM</label></td>
-																				<td><button title="View " class="btn btn-success ams_btn_special" data-toggle="modal" data-target="#v1"><i class="fa fa-eye"></i></button>
-																					<div id="v1" class="modal">
-								
+																				
+																			
+																			   
+																			   
+																			   <td> <a href="/EditVisitors4"><button class="btn btn-warning ams_btn_special"  title="Edit"><i class="fa fa-pencil"></i></button></a>
+																				<a href="/delvisitor/<%=vis[size-4].Visitor_Id%>"><button class="btn btn-danger ams_btn_special" onclick="return confirm('Are you sure you want to delete visitor?')" title="Delete"><i class="fa fa-trash"></i></button></a>
 																			</tr>
 																			<tr>
-															
-															
-																					<td>21/12/2018</td>
-																					<td>Saranka</td>
-																					<td>0776798456</td>
-																					<td>Mannar</td>
-																					<td>2L</td>
+																				<td><%=vis[size-5].Full_Name%></td>
+																				<td><%=vis[size-5].Mobile_No%></td>
+																				<td><%=vis[size-5].Address%></td>
+																				<td><label class="label label-primary ams_label"><%=vis[size-5].Name%></label></td>
+																				<td><label class="label label-warning ams_label"><%=vis[size-5].House_Name %></label>	</td>
+																				<td><%=vis[size-5].InDate%></td>
+																				<td><%=vis[size-5].OutDate%></td>
+																				<td><label class="label label-success ams_label"><%=vis[size-5].InTime%></label></td>
+																				<td><label class="label label-danger ams_label"><%=vis[size-5].OutTime%></label></td>
+																					
 																				
-																					<td><label class="label label-warning ams_label">3B</label></td>
-																					<td><label class="label label-success ams_label">09:00 PM</label></td>
-																					<td><label class="label label-danger ams_label">05:00 AM</label></td>
-																					<td><button title="View " class="btn btn-success ams_btn_special" data-toggle="modal" data-target="#v1"><i class="fa fa-eye"></i></button>
-																						<div id="v1" class="modal">
-									
+																					
+																				
+																				   
+																				   
+																				   <td> <a href="/EditVisitors5"><button class="btn btn-warning ams_btn_special"  title="Edit"><i class="fa fa-pencil"></i></button></a>
+																					<a href="/delvisitor/<%=vis[size-5].Visitor_Id%>"><button class="btn btn-danger ams_btn_special" onclick="return confirm('Are you sure you want to delete visitor?')" title="Delete"><i class="fa fa-trash"></i></button></a>
 																				</tr>
-				
 				
 				
 															
@@ -254,7 +254,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				
 											</tbody>
 										</table>
-									
 									</div>
 									<!-- <ul class="pagination">
 											<li class="active" disabled><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
@@ -319,7 +318,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					
 
 
-					<li id="menu-comunicacao"><a href="memberList.html"><i class=" fa fa-user"></i><span> Managment Committee </span><span class="fa fa-angle-right"
+					<li id="menu-comunicacao"><a href="committelist.html"><i class=" fa fa-user"></i><span> Managment Committee </span><span class="fa fa-angle-right"
 							 style="float: right"></span></a>
 					
 					</li>
