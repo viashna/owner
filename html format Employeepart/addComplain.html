@@ -1,8 +1,9 @@
+
 <!DOCTYPE HTML>
 <html>
 
 <head>
-	<title>Employee Salary </title>
+	<title> Committee List</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="Shoppy Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -76,7 +77,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<div class="profile_img">
 											<span class="prfil-img"><img src="images/mypro.jpg" width="50px" height="50px" alt=""> </span>
 											<div class="user-name">
-												<p>M.Annsha</p>
+												<p>Ansha</p>
 												<span>Security</span>
 											</div>
 											<i class="fa fa-angle-down lnr"></i>
@@ -85,10 +86,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										</div>
 									</a>
 									<ul class="dropdown-menu drp-mnu">
-										<li> <a href="empprofile.html"><i class="fa fa-cog"></i> Settings</a> </li>
-										<li> <a href="empproview.html"><i class="fa fa-user"></i> Profile</a> </li>
-										<li> <a href=""><i class="fa fa-sign-out"></i> Logout</a> </li>
-									</ul>
+											<li> <a href="empprofile.html"><i class="fa fa-cog"></i> Settings</a> </li>
+											<li> <a href="emppProView.html"><i class="fa fa-user"></i> Profile</a> </li>
+											<li> <a href="/"><i class="fa fa-sign-out"></i> Logout</a> </li>
+										</ul>
 								</li>
 							</ul>
 						</div>
@@ -114,8 +115,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<nav aria-label="breadcrumb br" style=" margin-left:-5px;">
 												<ol class="breadcrumb" style="background-color: #07f389">
 												  <li class="breadcrumb-item"><a href="index.html"style="color:chocolate; font-weight:bold; font-size:27px;">Home</a></li>
-												  <li class="breadcrumb-item"style="color:chocolate; font-weight:bold;font-size:27px;">Employee Information</li>
-												  <li class="breadcrumb-item active" style="color:chocolate;font-size:27px; "aria-current="page">Salary </li>
+												  <li class="breadcrumb-item"style="color:chocolate; font-weight:bold;font-size:27px;">Complain</li>
+												  <li class="breadcrumb-item active" style="color:chocolate;font-size:27px; "aria-current="page">Add Complain</li>
 										
 												</ol>
 												
@@ -124,100 +125,40 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 														<i class="fa fa-dashboard"></i></a>	
 											  </nav>
 									<div class="chit-chat-heading">
-											<i class="fa fa-align-justify"></i><span style="display:inline-block;width: 10px;"></span>Salary List
+											<i class="fa fa-align-justify"></i><span style="display:inline-block;width: 10px;"></span>Member List
 									</div>
 				
-									<div class="table-responsive" style="border: 3px solid whitesmoke; border-radius: 29px">
-										<table class="table table-dark table-hover">
-											<thead>
-				
-												<tr>
-                                                  
-													<th style=" font-size: 20px;">Employee Name</th>
-													<th style=" font-size: 20px;">Designation</th>
-													<th style=" font-size: 20px;">Salary per Month</th>
-									
-                                                    <th colspan="2" align="center"style=" font-size: 20px;">Action</th>
-												
-												</tr>
-				
-				
-											</thead>
-											
-											<tbody>
-													<tr>
-															
-																<td><%=emp[size-1].First_Name %></td>
-																<td><%=emp[size-1].Job %></td>
-																<td><%=emp[size-1].Amount %></td>
-															
-															
-														
-															<td><button title="View " class="btn btn-success ams_btn_special" data-toggle="modal" data-target="#v1"><i class="fa fa-eye"></i></button>
-																<div id="v1" class="modal">
-			
-																	<!-- Modal content -->
-																	<div class="modalt-content">
-																		<div class="modalt-header">
-																			<span class="closet" data-dismiss="modal">&times;</span>
-			
-																			<h2>Employee Salary Details:</h2>
-																		</div>
-																	
-																		<div class="modalt-body">
-			
-																			<h3 style="text-decoration:underline;font-weight:bold ">Details Infromation</h3>
-																			<div class="row">
-																				<div class="col-xs-6"> <b>Employee Name :</b><%=emp[size-1].First_Name %><br>
-																					<b>Email :</b> <%=emp[size-1].Email_Id %><br>
-                                                                                    <b>Mobile :</b> <%=emp[size-1].Phone%><br>
-                                                                                  
-																					<b>Address :</b> <%=emp[size-1].Address %><br></div>
-																				<div class="col-xs-6">
-                                                                                    <b>Designation :</b> <%=emp[size-1].Job %><br>
-                                                                                    <b>Salary:</b> <%=emp[size-1].Amount%><br>
-                                                                               
-																				</div>
-																			</div>
-																		</div>
-																		<div class="modalt-footer">
-																			<h3>Thank you</h3>
-			
-																		</div>
-			
-																	</div>
-			
-			
-																</div>
-			
-																		
-																	</td>
-															</tr>
-															
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-													
-												
-				
-											</tbody>
-										</table>
-									
-									
-									</div>
-									<ul class="pagination">
-											<li class="active" disabled><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
-									
-										
-										  </ul>
+                                    <div class="table-responsive">
+
+                                            <div class="col-md-12 compose-right">
+                                                <div class="inbox-details -default">
+        
+                                                    <div class="inbox-details-body" style="background-color:black ;border: 3px solid whitesmoke; border-radius: 29px">
+        
+                                                        <form class="com-mail" action="/editComplainO/<%=cop[size-1].Complaint_ID%>" method="post">
+                                                            <div class="form-group">
+        
+                                                                <h4 style="color:cornsilk;font-weight: bold">*Complain Title:</h4>
+                                                                <input type="text"value="<%=cop[size-1].Subject%>"  name="title" class="form-control"
+                                                                    required placeholder="Enter Complain Title">
+                                                                <h4 style="color:cornsilk;font-weight: bold">*Complain Date:</h4>
+                                                                <input type="date" onchange="(this.value)" value="<%=cop[size-1].Date%>"  name="date" class="form-control" required
+                                                                    placeholder="Enter the Date">
+                                                                
+                                                                <h4 style="color:cornsilk;font-weight: bold">*Description:</h4>
+                                                                <textarea class="form-control" name="des" placeholder="Enter the Description" > <%=cop[size-1].Description%></textarea>
+                                                                
+                                                          
+                                                            </div>
+        
+        
+                                                            <input type="submit" value="Save Information">
+                                                            <a href="/index"><input type="button" value="Back"> </a>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 								</div>
 							</div>
 							<!-- Last five vistiors -->
@@ -340,6 +281,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</ul>
 				</div>
 			</div>
+
 		<div class="clearfix"> </div>
 	</div>
 
@@ -352,3 +294,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+

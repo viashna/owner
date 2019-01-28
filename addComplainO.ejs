@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>common Notice</title>
+    <title>Owner Add Complain</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="Shoppy Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -16,8 +16,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             window.scrollTo(0, 1);
         }
     </script>
-     <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
-     <script>tinymce.init({ selector:'textarea' });</script>
+ 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="http://dhakadailybazar.com/apartment-management-system/dist/js/jquery.mask.min.js"></script>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
@@ -57,7 +56,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div class="header-main">
                     <div class="header-left">
                         <div class="logo-name">
-                            <a href="/indexE">
+                            <a href="">
                                 <h1>Apartment Management System</h1>
 
                             </a>
@@ -76,11 +75,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <li class="dropdown profile_details_drop">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                         <div class="profile_img">
-                                            <span class="prfil-img"><img src="images/mypro.jpg" width="50px" height="50px"
+                                            <span class="prfil-img"><img src="images/pro.jpg" width="50px" height="50px"
                                                     alt=""> </span>
                                             <div class="user-name">
-                                                <p><%=user.First_Name%></p>
-                                                <span><%=emp.Jop%></span>
+                                                <p><%=user.First_Name%>
+                                                <span>Owner</span>
                                             </div>
                                             <i class="fa fa-angle-down lnr"></i>
                                             <i class="fa fa-angle-up lnr"></i>
@@ -88,10 +87,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                         </div>
                                     </a>
                                     <ul class="dropdown-menu drp-mnu">
-                                            <li> <a href="/empprofileE"><i class="fa fa-cog"></i> Settings</a> </li>
-                                            <li> <a href="/empproViewE"><i class="fa fa-user"></i> Profile</a> </li>
-                                            <li> <a href="/"><i class="fa fa-sign-out"></i> Logout</a> </li>
-                                        </ul>
+                                        <li> <a href="/ownerprofile"><i class="fa fa-cog"></i> Settings</a> </li>
+                                        <li> <a href="/ownerProView"><i class="fa fa-user"></i> Profile</a> </li>
+                                        <li> <a href="/"><i class="fa fa-sign-out"></i> Logout</a> </li>
+                                    </ul>
                                 </li>
                             </ul>
                         </div>
@@ -116,14 +115,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <div class="work-progres">
                                 <nav aria-label="breadcrumb br" style=" margin-left:-5px;border-radius:3.25rem;">
                                     <ol class="breadcrumb" style="background-color: #07f389;">
-                                        <li class="breadcrumb-item"><a href="/indexE" style="color:chocolate; font-weight:bold; font-size:27px;">Home</a></li>
-                                        <li class="breadcrumb-item" style="color:chocolate; font-weight:bold;font-size:27px;">Notice</li>
+                                        <li class="breadcrumb-item"><a href="/index" style="color:chocolate; font-weight:bold; font-size:27px;">Home</a></li>
+                                        <li class="breadcrumb-item" style="color:chocolate; font-weight:bold;font-size:27px;">Owner</li>
                                         <li class="breadcrumb-item active" style="color:chocolate;font-size:27px; "
-                                            aria-current="page">Common Notice Board</li>
+                                            aria-current="page">Add Complain</li>
 
                                     </ol>
 
-                                    <a class="btn btn-primary" style="float: right;    font-size: 2rem;" href="/indexE"
+                                    <a class="btn btn-primary" style="float: right;    font-size: 2rem;" href="/index"
                                         data-toggle="tooltip" data-placement="left" title="Home">
                                         <i class="fa fa-dashboard"></i></a>
                                 </nav>
@@ -131,21 +130,39 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 
-                                
+                                <div class="chit-chat-heading">
+                                    <i class="fa fa-align-justify"></i><span style="display:inline-block;width: 10px;"></span>Complain
+                                     Form
+                                </div>
 
                                 <div class="table-responsive">
 
                                     <div class="col-md-12 compose-right">
                                         <div class="inbox-details -default">
 
-                                            <table class="table table-dark table-hover">
-                                                <thead>
-                                            <tr><td >Apartment Color Meeting on every .</td></tr>
-                                            <tr><td >Children cannot play game inside the Appartment.</td></tr>                              
-                                            <tr><td >carbage vehicle will come every Sunday morning.</td></tr>
-                                            <tr><td >There will be a meeting about Anual appartment day on next Sunday.  </td></tr>
-            
-            </thead></table>        
+                                            <div class="inbox-details-body" style="background-color:black ;border: 3px solid whitesmoke; border-radius: 29px">
+
+                                                <form class="com-mail" action="/addComplainO" method="post">
+                                                    <div class="form-group">
+
+                                                        <h4 style="color:cornsilk;font-weight: bold">*Compalin Title:</h4>
+                                                        <input type="text" name="title" class="form-control"
+                                                            required placeholder="Enter Complain Title">
+                                                        <h4 style="color:cornsilk;font-weight: bold">*Complain Date:</h4>
+                                                        <input type="date" onchange="(this.value)"  name="date" class="form-control" required
+                                                            placeholder="Enter the Date">
+                                                        
+                                                        <h4 style="color:cornsilk;font-weight: bold">*Description:</h4>
+                                                        <textarea class="form-control" name="des" placeholder="Enter the Description" ></textarea>
+                                                        
+                                                  
+                                                    </div>
+
+
+                                                    <input type="submit" value="Save Information">
+                                                    <a href="/index"><input type="button" value="Back"> </a>
+                                                </form>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -157,14 +174,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <div class="clearfix"> </div>
                     </div>
                  
-                    <div class="chit-chat-layer1t">
-                        <!-- last Fivve Complain -->
-                        
-                        <!-- Last five vistiors -->
-
-
-                        <div class="clearfix"> </div>
-                    </div>
+                  
 
 
 
@@ -193,60 +203,79 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</a> </div>
 			<div class="menu">
 				<ul id="menu">
-					<li id="menu-home"><a href="/indexE"><i class="fa fa-tachometer"></i><span>Dashboard</span></a></li>
-					<!-- <li><a href="#"><i class="fa fa-book nav_icon"></i><span>Floor Information</span><span class="fa fa-angle-right"
+					<li id="menu-home"><a href="/index"><i class="fa fa-tachometer"></i><span>Dashboard</span></a></li>
+					<li><a href="/FloorListO"><i class="fa fa-book nav_icon"></i><span>Floor Information</span><span class="fa fa-angle-right"
+							 style="float: right"></span></a>
+						
+					</li>
+					<li id="menu-comunicacao"><a href="#"><i class="fa fa-users"></i><span>Owner Information</span><span class="fa fa-angle-right"
 							 style="float: right"></span></a>
 						<ul>
-							<li><a href="/FloorListE">Flooar List</a></li>
-							<li><a href="/addFloorE">Add Floor</a></li>
+							<li id="menu-arquivos"><a href="/ownerListlo">Owner List</a></li>
+						
 						</ul>
-					</li> -->
-					<li id="menu-comunicacao"><a href="/ownerListE"><i class="fa fa-users"></i><span>Owner Information</span><span class="fa fa-angle-right"
-							 style="float: right"></span></a>
-						
-					</li>
-					<li id="menu-comunicacao"><a href="/leaveRequestE"><i class="fa fa-bell"></i><span>Leave Request</span><span class="fa fa-angle-right"
-							 style="float: right"></span></a>
-						
 					</li>
 
-					
-					
-
-
-					<li id="menu-comunicacao"><a href="/committelistE"><i class="fa fa-user"></i><span> Managment Committee </span><span class="fa fa-angle-right"
-							 style="float: right"></span></a>
-					
-					</li>
-
-					<li id="menu-comunicacao"><a href="/salaryListE"><i class=" fa fa-money"></i><span>salary statment</span><span class="fa fa-angle-right"
-							 style="float: right"></span></a>
-						
-					</li>
-
-
-
-				
-
-					<li id="menu-comunicacao"><a href="/visitorsListE"><i class=" fa fa-car"></i><span>Visitors</span><span class="fa fa-angle-right"
+					<li id="menu-comunicacao"><a href="#"><i class="fa fa-users"></i><span>Employee Information</span><span class="fa fa-angle-right"
 							 style="float: right"></span></a>
 						<ul>
 
-						
+							<li id="menu-arquivos"><a href="/employeeListO">Employee List</a></li>
+							
+
+						</ul>
+					</li>
+
+					<li id="menu-comunicacao"><a href="#"><i class=" fa fa-cog"></i><span>Owner Utility</span><span class="fa fa-angle-right"
+							 style="float: right"></span></a>
+						<ul>
+							<li id="menu-arquivos"><a href="/OwnerUtilityListO">Owner Utility List</a></li>
 							
 						</ul>
 					</li>
 
-					<li id="menu-comunicacao"><a href="/noticeboardE"><i class=" fa fa-commenting"></i><span>NoticeBoard</span><span class="fa fa-angle-right"
+					<li id="menu-comunicacao"><a href="#"><i class=" fa fa-scissors"></i><span>Maintenance Cost</span><span class="fa fa-angle-right"
 							 style="float: right"></span></a>
 						<ul>
-							<li id="menu-arquivos"><a href="/commonoticeE">Common NoticeBoard</a></li>
-							<li id="menu-arquivos"><a href="/empnoticeE">Employee NoticeBoard</a></li>
+							<li id="menu-arquivos"><a href="/maintainCostListO">Maintenance Cost List</a></li>
 							
 						</ul>
 					</li>
 
 
+					<li id="menu-comunicacao"><a href="#"><i class=" fa fa-user"></i><span>Committee</span><span class="fa fa-angle-right"
+							 style="float: right"></span></a>
+						<ul>
+							<li id="menu-arquivos"><a href="/committeListO">Member List</a></li>
+						
+						</ul>
+					</li>
+
+				
+
+
+
+					<li id="menu-comunicacao"><a href="#"><i class=" fa fa-comments"></i><span>Complain</span><span class="fa fa-angle-right"
+							 style="float: right"></span></a>
+						<ul>
+
+							<li id="menu-arquivos"><a href="/complainListO">Complain List</a></li>
+							<li id="menu-arquivos"><a href="/addComplainO">Add Complain</a></li>
+					
+						</ul>
+					</li>
+
+				
+					<li id="menu-comunicacao"><a href="#"><i class=" fa fa-commenting"></i><span>NoticeBoard</span><span class="fa fa-angle-right"
+							 style="float: right"></span></a>
+						<ul>
+
+							<li id="menu-arquivos"><a href="/CommonNoticeO">Common NoticeBoard</a></li>
+							<li id="menu-arquivos"><a href="/ownerNoticeO">Owner NoticeBoard</a></li>
+						</ul>
+					</li>
+
+
 
 
 
@@ -256,12 +285,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 
+
+					<li><a href="#"><i class="fa fa-cog"></i><span>System</span><span class="fa fa-angle-right" style="float: right"></span></a>
+						<ul>
+								<li id="menu-academico-boletim"><a href="/ownerProViewO">profile</a></li>
+							
+							
+						</ul>
+					</li>
 
 				</ul>
 			</div>
 		</div>
-
-        <div class="clearfix"> </div>
+        <div class="clearfix">
+             </div>
     </div>
 
 
